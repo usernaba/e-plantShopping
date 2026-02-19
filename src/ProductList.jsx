@@ -4,6 +4,8 @@ import { addItem } from './CartSlice';
 import './ProductList.css';
 import CartItem from './CartItem';
 
+//starts from here
+
 function ProductList({ onHomeClick }) {
     const cart = useSelector(state => state.cart?.items || []); 
     const dispatch = useDispatch();

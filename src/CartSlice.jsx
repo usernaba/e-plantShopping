@@ -17,7 +17,7 @@ export const CartSlice = createSlice({
     },
     
     removeItem: (state, action) => {
-      // If action.payload is an object, use action.payload.name, otherwise use it directly
+      // If action.payload is an object
       const nameToRemove = action.payload.name || action.payload;
       state.items = state.items.filter(item => item.name !== nameToRemove);
     },

@@ -7,7 +7,6 @@ const CartItem = ({ onContinueShopping }) => {
   const cart = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
 
-  // Helper function to turn "$15" into 15
   const parseCost = (costString) => {
     return Number(costString.replace('$', ''));
   };
